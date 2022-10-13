@@ -38,7 +38,8 @@
 <!--           Comments Area -->
           <div class="col-lg-8 col-md-10 mx-auto comment">
             {% if not is_logged_in: %}
-            <h2>Please log in to comment.</h2>
+            <h4>Comments</h4>
+            <p>Please log in to comment.</p>
             {% else: %}
             {{ ckeditor.load() }}
             {{ ckeditor.config(name='comment') }}
